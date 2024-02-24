@@ -5,19 +5,16 @@ function PlayList (){
 
     return(
 <>
-        <Button>Create Playlist</Button>
-            <Card 
-            style={{width: '18rem'}}
-            className='mb-2'
-            >
-                <Card.Body>
-                    <ListGroup variant='flush'>
-                        <ListGroupItem>Song</ListGroupItem>
-                        <ListGroupItem>Artist</ListGroupItem>
-                        <ListGroupItem>Album</ListGroupItem>
-                    </ListGroup>
-                </Card.Body>
-            </Card>
+        
+        <Container style={{height: 500, backgroundColor:'lightgray'}} className='mt-3'>
+        <ListGroup>
+            <ListGroupItem></ListGroupItem>
+            <ListGroupItem></ListGroupItem>
+            <ListGroupItem></ListGroupItem>
+        </ListGroup>
+
+            </Container>
+            <Button className='mx-3'>Create Playlist</Button>
 </>
     );
 

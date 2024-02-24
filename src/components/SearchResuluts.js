@@ -1,18 +1,21 @@
-import { Container, Card, CardBody, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Card, CardImg, CardBody, CardText, Row, CardTitle } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SearchResults() {
 
     return(
-         <Card style={{width: '18rem'}}>
+    <>
+    <Container>
+        <Row className='mx-2 row row-cols-4'>
+            <Card>
+                <Card.Img src='#'></Card.Img>
                 <Card.Body>
-                    <ListGroup variant='flush'>
-                        <ListGroupItem>Song</ListGroupItem>
-                        <ListGroupItem>Artist</ListGroupItem>
-                        <ListGroupItem>Album</ListGroupItem>
-                    </ListGroup>
+                    <Card.Title>Album name here</Card.Title>
                 </Card.Body>
             </Card>
+        </Row>
+    </Container>
+    </>
         
         
     );

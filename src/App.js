@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
+
+
 function App() {
 
 
@@ -14,14 +18,12 @@ function App() {
 
   return (
     <>
-    <div className="App">
+    <Container style={{textAlign:'center'}}>
       <SearchBar/>
-      <PlayList/>
       <SearchResults/>
+      <PlayList/>
       <Button>Save to Spotify</Button>
-
-
-    </div>
+      </Container>
     </>
   );
 }
