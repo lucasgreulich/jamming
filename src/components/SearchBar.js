@@ -12,7 +12,8 @@ const CLIENT_SECRET="63bdb5009c97420b9f624217aa78c731";
 function SearchBar (){
 const [searchInput, setSearchInput] = useState("");
 const [accessToken, setAccessToken] = useState("");
-const [albums, setAlbums] = useState("");
+const [albums, setAlbums] = useState([]);
+
 useEffect(() =>{
 var authPerameters = {
 method: 'POST',
@@ -69,13 +70,16 @@ return (
 </Container>
 <Container>
         <Row className='mx-2 row row-cols-4'>
-                
-                    <Card>
-                    <Card.Img src='#'></Card.Img>
-                    <Card.Body>
-                        <Card.Title>Album name here</Card.Title>
-                    </Card.Body>
-                </Card>
+                {albums.map( (albums, i ) =>{
+                        return(
+                            <Card>
+                            <Card.Img src={albums.images[0].url}></Card.Img>
+                            <Card.Body>
+                                <Card.Title>{albums.name}</Card.Title>
+                            </Card.Body>
+                        </Card>
+                    )    
+                    })}
         </Row>
     </Container>
 
