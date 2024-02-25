@@ -8,9 +8,9 @@ function PlayList (){
         
         <Container style={{height: 500, backgroundColor:'lightgray'}} className='mt-3'>
         <ListGroup>
-            <ListGroupItem></ListGroupItem>
-            <ListGroupItem></ListGroupItem>
-            <ListGroupItem></ListGroupItem>
+            <ListGroupItem>Song 1</ListGroupItem>
+            <ListGroupItem>Song 2</ListGroupItem>
+            <ListGroupItem>Song3</ListGroupItem>
         </ListGroup>
 
             </Container>
