@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Card, CardBody, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { useState } from 'react';
+
 
 function PlayList (){
+
 
     return(
 <>
@@ -10,7 +13,7 @@ function PlayList (){
         <ListGroup>
             <ListGroupItem>Song 1</ListGroupItem>
             <ListGroupItem>Song 2</ListGroupItem>
-            <ListGroupItem>Song3</ListGroupItem>
+            <ListGroupItem>Song 3</ListGroupItem>
         </ListGroup>
 
             </Container>

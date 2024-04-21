@@ -14,6 +14,7 @@ const [searchInput, setSearchInput] = useState("");
 const [accessToken, setAccessToken] = useState("");
 const [albums, setAlbums] = useState([]);
 
+
 useEffect(() =>{
 var authPerameters = {
 method: 'POST',
@@ -56,6 +57,11 @@ var returnedAlbums = await fetch('https://api.spotify.com/v1/artists/' + artistI
     })
 }
 console.log(albums);
+
+const cardClickHandler = () => {
+
+}
+
 return (
 <>
 <Container>
@@ -72,7 +78,7 @@ return (
         <Row className='mx-2 row row-cols-4'>
                 {albums.map( (albums, i ) =>{
                         return(
-                            <Card>
+                            <Card onClick={() => alert('Clicked')} style={{cursor:'pointer'}}>
                             <Card.Img src={albums.images[0].url}></Card.Img>
                             <Card.Body>
                                 <Card.Title>{albums.name}</Card.Title>

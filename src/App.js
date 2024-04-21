@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import PlayList from './components/Playlist';
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container';
+import TrackList from './components/TrackList'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
